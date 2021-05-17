@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!-- saved from url=(0066)file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(3).html -->
+<!-- saved from url=(0066)file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(5).html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Final Tutorial</title><script src="./Final Tutorial_files/require.min.js"></script>
+<title>Final Tutorial</title><script src="./nba-avg-ppg_files/require.min.js"></script>
 
 
 
@@ -14217,7 +14217,7 @@ a.anchor-link {
 
 
 <!-- Load mathjax -->
-    <script type="text/javascript" async="" src="./Final Tutorial_files/MathJax.js"></script>
+    <script type="text/javascript" async="" src="./nba-avg-ppg_files/MathJax.js"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config;executed=true">
     init_mathjax = function() {
@@ -14496,7 +14496,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 align="center"><big>Predicting NBA Players' Points per Game</big></h3>
+<h3 align="center"><big>Predicting NBA Players' Points per Game</big></h3><h3 align="center">- Sesha Tipirneni</h3>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14507,7 +14507,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Introduction">Introduction<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(3).html#Introduction">¶</a></h2><p>Since I was child, basketball was my favorite sport to not only play but also watch. Specifically, the National Basketball Association was what I would watch every day as a child and would be very passionate about my hometown team in the NBA, the Washington Wizards. When growing up with friends who also liked the NBA, we would constantly be having discussions about our predictions for the upcoming seasons and how certain players would play in the future. With the growth of technology and data science over the years, NBA teams try to develop new models to analyze their existing players and make predictions on each player and teams future performance in order to help put together the best team combination. This was captured well in the movie "Moneyball" as the MLB team, Oakland A's, assembled a record-breaking team on a budget using statistical analyses.</p>
+<h2 id="Introduction">Introduction<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(5).html#Introduction">¶</a></h2><p>Since I was child, basketball was my favorite sport to not only play but also watch. Specifically, the National Basketball Association was what I would watch every day as a child and would be very passionate about my hometown team in the NBA, the Washington Wizards. When growing up with friends who also liked the NBA, we would constantly be having discussions about our predictions for the upcoming seasons and how certain players would play in the future. With the growth of technology and data science over the years, NBA teams try to develop new models to analyze their existing players and make predictions on each player and teams future performance in order to help put together the best team combination. This was captured well in the movie "Moneyball" as the MLB team, Oakland A's, assembled a record-breaking team on a budget using statistical analyses.</p>
 <p>3-pointers are becoming more common in NBA games of late and teams are shifting their shot selection and offensive schemes to cater to this. Moreover, the art of the game is now changing with the offense heavily being focused on and teams are constantly scrambling to try to get the player that can consistently score the most number of points. This is the main reason why I thought it would be interesting to examine what may affect a player's ability to score. In this project, I will analyze what affects the points a player averages per game for a season and also will attempt to predict a player's average points per game in a season considering various parameters.</p>
 
 </div>
@@ -14541,7 +14541,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Data-Collection/Curation">Data Collection/Curation<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(3).html#Data-Collection/Curation">¶</a></h2><p>I will be using a dataset from Kaggle and I renamed the csv file for convenience purposes. I will name the data as season_stats and store it in a pandas dataframe for parsing and other implementation reasons. This dataset has 53 different statistics/information about the players so I decided it is sufficient in order to complete my desired analysis. The files are formatted as a Comma Separated Value (CSV) file so I will parsing it by using the "csv" package in python.</p>
+<h2 id="Data-Collection/Curation">Data Collection/Curation<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(5).html#Data-Collection/Curation">¶</a></h2><p>I will be using a dataset from Kaggle and I renamed the csv file for convenience purposes. I will name the data as season_stats and store it in a pandas dataframe for parsing and other implementation reasons. This dataset has 53 different statistics/information about the players so I decided it is sufficient in order to complete my desired analysis. The files are formatted as a Comma Separated Value (CSV) file so I will parsing it by using the "csv" package in python.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14893,7 +14893,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Data-Management/Representation">Data Management/Representation<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(3).html#Data-Management/Representation">¶</a></h2><p>Now that I have the data I need, I have to now organize the data so that it will be easier to work with and also see if there is anything insightful during the process. Below are the steps that I will be doing to prepare the data.</p>
+<h2 id="Data-Management/Representation">Data Management/Representation<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(5).html#Data-Management/Representation">¶</a></h2><p>Now that I have the data I need, I have to now organize the data so that it will be easier to work with and also see if there is anything insightful during the process. Below are the steps that I will be doing to prepare the data.</p>
 <ol>
 <li>Remove any unnecessary columns.</li>
 <li>Get data from 2017 since to work with the 2016-2017 season only.</li>
@@ -15322,14 +15322,14 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Exploratory-Data-Analysis">Exploratory Data Analysis<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(3).html#Exploratory-Data-Analysis">¶</a></h2><p>During the Exploratory Data Analysis we will begin to visualize our previously cleaned data to see if there are any interesting correlations that we can draw.</p>
+<h2 id="Exploratory-Data-Analysis">Exploratory Data Analysis<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(5).html#Exploratory-Data-Analysis">¶</a></h2><p>During the Exploratory Data Analysis we will begin to visualize our previously cleaned data to see if there are any interesting correlations that we can draw.</p>
 <p>Since during any NBA game a player does a lot more than just scoring, I will be trying to see if there correlations between other aspects of defense and offense such as rebounding, assisting, etc. that has to do with the points a player averages in a season.</p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Average-Assists-per-game-vs-Average-Points-per-game">Average Assists per game vs Average Points per game<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(3).html#Average-Assists-per-game-vs-Average-Points-per-game">¶</a></h2>
+<h2 id="Average-Assists-per-game-vs-Average-Points-per-game">Average Assists per game vs Average Points per game<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(5).html#Average-Assists-per-game-vs-Average-Points-per-game">¶</a></h2>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -15394,7 +15394,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Average-Rebounds-per-game-vs-Average-Points-per-game">Average Rebounds per game vs Average Points per game<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(3).html#Average-Rebounds-per-game-vs-Average-Points-per-game">¶</a></h2>
+<h2 id="Average-Rebounds-per-game-vs-Average-Points-per-game">Average Rebounds per game vs Average Points per game<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(5).html#Average-Rebounds-per-game-vs-Average-Points-per-game">¶</a></h2>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -15459,7 +15459,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Field-Goals-vs-Average-Points-per-game">Field Goals vs Average Points per game<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(3).html#Field-Goals-vs-Average-Points-per-game">¶</a></h2><p>Field goal percentage is the number of made shots by the total number of shot attempts. Since in order to score a point in an NBA game one has to shoot, I thought seeing if there is a relation between the two would be important. If a player has a relatively high field goal percentage, does that mean that there points per game average is also very high? Another aspect to consider is the field goal attempts. As the player shoots more, does that mean that his average PPG would go up or down. To see if there is any relation between these two and the average PPG of a player, I will be creating scatterplots below.</p>
+<h2 id="Field-Goals-vs-Average-Points-per-game">Field Goals vs Average Points per game<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(5).html#Field-Goals-vs-Average-Points-per-game">¶</a></h2><p>Field goal percentage is the number of made shots by the total number of shot attempts. Since in order to score a point in an NBA game one has to shoot, I thought seeing if there is a relation between the two would be important. If a player has a relatively high field goal percentage, does that mean that there points per game average is also very high? Another aspect to consider is the field goal attempts. As the player shoots more, does that mean that his average PPG would go up or down. To see if there is any relation between these two and the average PPG of a player, I will be creating scatterplots below.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -15523,7 +15523,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Shooting-Efficiency-vs-Average-Points-per-game">Shooting Efficiency vs Average Points per game<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(3).html#Shooting-Efficiency-vs-Average-Points-per-game">¶</a></h2><p>Shooting Efficiency is the percentage of total shots the player makes. More specifically, the true shooting percentage measure is an advanced statistic that measures a player's efficiency at shooting the ball. The formula used to calculate it is Field Goal Attempts + 0.44 * Free Throw Attempts. If a player averages a relatively true shooting percentage, does that mean that there shooting efficiency is also very high? To see if there is a relation between the two, I will be creating a scatter plot below.</p>
+<h2 id="Shooting-Efficiency-vs-Average-Points-per-game">Shooting Efficiency vs Average Points per game<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(5).html#Shooting-Efficiency-vs-Average-Points-per-game">¶</a></h2><p>Shooting Efficiency is the percentage of total shots the player makes. More specifically, the true shooting percentage measure is an advanced statistic that measures a player's efficiency at shooting the ball. The formula used to calculate it is Field Goal Attempts + 0.44 * Free Throw Attempts. If a player averages a relatively true shooting percentage, does that mean that there shooting efficiency is also very high? To see if there is a relation between the two, I will be creating a scatter plot below.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -15589,7 +15589,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Free-Throws-vs-Average-Points-per-game">Free Throws vs Average Points per game<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(3).html#Free-Throws-vs-Average-Points-per-game">¶</a></h2><p>Free Throws are another way a player can get points so it must be included when performing analyses on players total points averages. The question I will dive into is whether the higher or lower free throw percentage a player has means that the player has a higher or lower (respectively) average PPG. Since a player who has a high free throw percentage tends to mean they shoot the ball well, does that mean it is related to how many points a player averages?</p>
+<h2 id="Free-Throws-vs-Average-Points-per-game">Free Throws vs Average Points per game<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(5).html#Free-Throws-vs-Average-Points-per-game">¶</a></h2><p>Free Throws are another way a player can get points so it must be included when performing analyses on players total points averages. The question I will dive into is whether the higher or lower free throw percentage a player has means that the player has a higher or lower (respectively) average PPG. Since a player who has a high free throw percentage tends to mean they shoot the ball well, does that mean it is related to how many points a player averages?</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -15655,7 +15655,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="2-point-&amp;-3-point-vs-Average-PPG">2-point &amp; 3-point vs Average PPG<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(3).html#2-point-&amp;-3-point-vs-Average-PPG">¶</a></h2><p>While we analyzed the field goal percentage, we will now dig even dipper to try to see main forms of scoring, 2-pointers and 3-pointers, have an affect on a players average PPG. I will not only try to see if there is a relationship between the players 2-point and 3-point percentages and their average PPG but also if there is a relationship between the number of 2-point and 3-point attempts. This is because so far I have tested if the player's efficiency has a relationship with their average PPG but not whether just shooting more in general, regardless how accurate they are, has any correlation with their average PPG.</p>
+<h2 id="2-point-&amp;-3-point-vs-Average-PPG">2-point &amp; 3-point vs Average PPG<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(5).html#2-point-&amp;-3-point-vs-Average-PPG">¶</a></h2><p>While we analyzed the field goal percentage, we will now dig even dipper to try to see main forms of scoring, 2-pointers and 3-pointers, have an affect on a players average PPG. I will not only try to see if there is a relationship between the players 2-point and 3-point percentages and their average PPG but also if there is a relationship between the number of 2-point and 3-point attempts. This is because so far I have tested if the player's efficiency has a relationship with their average PPG but not whether just shooting more in general, regardless how accurate they are, has any correlation with their average PPG.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -15774,13 +15774,13 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Analysing-Non-Skill-Based-Attributes">Analysing Non-Skill Based Attributes<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(3).html#Analysing-Non-Skill-Based-Attributes">¶</a></h2><p>So far I have analyzed only statistics related to the skill of players. I will now dig deep into whether other factors such as what team they are on or what position they play to see if there are any significant trends or relationships.</p>
+<h2 id="Analysing-Non-Skill-Based-Attributes">Analysing Non-Skill Based Attributes<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(5).html#Analysing-Non-Skill-Based-Attributes">¶</a></h2><p>So far I have analyzed only statistics related to the skill of players. I will now dig deep into whether other factors such as what team they are on or what position they play to see if there are any significant trends or relationships.</p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Team-vs-Average-PPG">Team vs Average PPG<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(3).html#Team-vs-Average-PPG">¶</a></h2><p>Firstly, let see if there is a relationship between the team a player is on and the average points per game a player has for a season. Furthermore, in the NBA there are certain teams such as the Boston Celtics and Los Angeles Lakers that have been relatively good team for most of their years in the NBA and maybe well known franchises have a higher average PPG for players than other teams simply because certain organizations could tend to have better players that score more.</p>
+<h2 id="Team-vs-Average-PPG">Team vs Average PPG<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(5).html#Team-vs-Average-PPG">¶</a></h2><p>Firstly, let see if there is a relationship between the team a player is on and the average points per game a player has for a season. Furthermore, in the NBA there are certain teams such as the Boston Celtics and Los Angeles Lakers that have been relatively good team for most of their years in the NBA and maybe well known franchises have a higher average PPG for players than other teams simply because certain organizations could tend to have better players that score more.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -15834,7 +15834,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Games-Played/Started-vs-Average-PPG">Games Played/Started vs Average PPG<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(3).html#Games-Played/Started-vs-Average-PPG">¶</a></h2><p>In the NBA, a player who starts the game tends to play more minutes in the game than the players who come in later in the game. This leads to the question if a player who starts or who has played more games tend to average a high or lower average PPG? Below I will investigate this through plots.</p>
+<h2 id="Games-Played/Started-vs-Average-PPG">Games Played/Started vs Average PPG<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(5).html#Games-Played/Started-vs-Average-PPG">¶</a></h2><p>In the NBA, a player who starts the game tends to play more minutes in the game than the players who come in later in the game. This leads to the question if a player who starts or who has played more games tend to average a high or lower average PPG? Below I will investigate this through plots.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -15896,7 +15896,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Position-vs-Average-PPG">Position vs Average PPG<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(3).html#Position-vs-Average-PPG">¶</a></h2>
+<h2 id="Position-vs-Average-PPG">Position vs Average PPG<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(5).html#Position-vs-Average-PPG">¶</a></h2>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -15949,7 +15949,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Machine-Learning">Machine Learning<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(3).html#Machine-Learning">¶</a></h2><p>Now comes the most interesting part, where we analyze all the data and predict the average PPG for every NBA player in the 2016-2017 season. The goal now is to find the independent variables that will help us calculate a player's average data. We did the exploratory data analysis above to try to analyze the trends of the average PPG based on their attributes. The task at hand now is to find which of these attributes are best at predicting the average PPG. Moreover, the goal is to find the attributes of a player that have the strongest correlation with a player's average PPG so that we can build a predictive model.</p>
+<h2 id="Machine-Learning">Machine Learning<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(5).html#Machine-Learning">¶</a></h2><p>Now comes the most interesting part, where we analyze all the data and predict the average PPG for every NBA player in the 2016-2017 season. The goal now is to find the independent variables that will help us calculate a player's average data. We did the exploratory data analysis above to try to analyze the trends of the average PPG based on their attributes. The task at hand now is to find which of these attributes are best at predicting the average PPG. Moreover, the goal is to find the attributes of a player that have the strongest correlation with a player's average PPG so that we can build a predictive model.</p>
 <p>Since we have numerous variables, we will be using Linear Regression. We will be creating a correlation matrix to determine the strongest features within the data set. I will be choosing the threshold of 0.7. This means that if an attribute has a correlation greater than 0.7 with the 'PPG' column in the table, we will then choose that attribute as one of the independent variables for the model since if the correlation coefficient is greater than 0.7 that means that it most likely has a strong correlation with the average PPG.</p>
 <p>I will then split the dataset into training and testing datasets with the training datasets being 70% of the entire data and 30% for the testing.</p>
 
@@ -16131,7 +16131,7 @@ Mean Absolute Error: 1.5608066876516025
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Conclusion">Conclusion<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(3).html#Conclusion">¶</a></h2><p>In the end, we were able to build a predictive model to find out what a player points per game average would be if we knew certain variables. The take away from this would be that although we have built a good model to accomplish such a goal, there are many other factors in sports that we can not control that must be considered. For example, injuries, fitness levels, and motivation of the players are aspects of the player that we cannot forsee or measure and they definitely do have an impact on how much a player would score per game. While basketball in general is a simple game of just scoring more than your opponent, one can see that there many complexities to the game especially when playing at the professional level of the NBA.</p>
+<h2 id="Conclusion">Conclusion<a class="anchor-link" href="file:///Users/seshatipirneni/Downloads/Final%20Tutorial%20(5).html#Conclusion">¶</a></h2><p>In the end, we were able to build a predictive model to find out what a player points per game average would be if we knew certain variables. The take away from this would be that although we have built a good model to accomplish such a goal, there are many other factors in sports that we can not control that must be considered. For example, injuries, fitness levels, and motivation of the players are aspects of the player that we cannot forsee or measure and they definitely do have an impact on how much a player would score per game. While basketball in general is a simple game of just scoring more than your opponent, one can see that there many complexities to the game especially when playing at the professional level of the NBA.</p>
 <p>If you are not a basketball fan, I hope that I have sparked an interest in you towards basketball while also navigating you through steps of Data Science. From gathering, organizing, and analyzing the data to building a predictive model, every step was informational on the NBA and the relationship between different statistics in the game. I mentioned earlier that the NBA changed in the past 10 years with games becoming more and more high scoring every year and if you would like to read about the change and learn more you can do so <a href="https://www.usatoday.com/story/sports/nba/2018/10/25/nba-scoring-increase-points-up-2018-19-season/1765493002/">here.</a></p>
 <p>Thank you for your time to read my analysis of what affects a players average points per game in the NBA, and as a life long basketball fan, I hope you had as much entertainment reading this as I did writing it.</p>
 
