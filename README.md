@@ -1,4 +1,4 @@
-#Link: https://sesha-t.github.io/nba-avg-ppg.html
+## Link: https://sesha-t.github.io/nba-avg-ppg.html
 # Motivation and Introduction
 Since I was child, basketball was my favorite sport to not only play but also watch. Specifically, the National Basketball Association was what I would watch every day as a child and would be very passionate about my hometown team in the NBA, the Washington Wizards. When growing up with friends who also liked the NBA, we would constantly be having discussions about our predictions for the upcoming seasons and how certain players would play in the future. With the growth of technology and data science over the years, NBA teams try to develop new models to analyze their existing players and make predictions on each player and teams future performance in order to help put together the best team combination. This was captured well in the movie "Moneyball" as the MLB team, Oakland A's, assembled a record-breaking team on a budget using statistical analyses.
 
