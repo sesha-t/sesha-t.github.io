@@ -4,3 +4,5 @@ Since I was child, basketball was my favorite sport to not only play but also wa
 
 3-pointers are becoming more common in NBA games of late and teams are shifting their shot selection and offensive schemes to cater to this. Moreover, the art of the game is now changing with the offense heavily being focused on and teams are constantly scrambling to try to get the player that can consistently score the most number of points. This is the main reason why I thought it would be interesting to examine what may affect a player's ability to score. In this project, I will analyze what affects the points a player averages per game for a season and also will attempt to predict a player's average points per game in a season considering various parameters.
 
+Please check out the link to see what I have found. 
+
